@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+<html lang="fi">
+    <script defer src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elämyskerho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elämyskerho</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tietoa meistä</a></li>
+                <li><a href="#gallery">Elämykset & Galleria</a></li>
+                <li><a href="#partners">Yhteistyö</a></li>
+                <li><a href="#contact">Ota yhteyttä</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about" class="section">
+            <h2><a href="#about">Tietoa meistä</a></h2>
+            <p>Mikkeliläinen Elämyskerho sai alkunsa vuonna 2011 yhden naisen oivalluksesta: miten uudella paikkakunnalla voisi tutustua uusiin ihmisiin? Pienestä ryhmästä kasvoi pian monimuotoinen yhteisö, jossa jokainen tapaaminen on yllätys – ja jokainen elämys ainutlaatuinen. Kerhoon ei kutsuta vain parhaita ystäviä, vaan tarkoituksena on kohdata uusia, erilaisia ihmisiä ja laajentaa omaa maailmankuvaa. Täällä ei ole pakko tehdä mitään, mutta rohkeus kokeilla uutta on vienyt jäsenet mukavuusalueidensa ulkopuolelle – ja tarjonnut unohtumattomia hetkiä. Liity mukaan ja koe jotain, mitä et osannut odottaa!</p>
+            
+            <p>Elämyskerhossa on tällä hetkellä 16 jäsentä, ja uusia otetaan mukaan silloin, kun aiempia jäseniä jää pois esimerkiksi muuton vuoksi. Kerhon taustalla ei ole yhdistystä, joten hallinnollista työtä ei ole – vain elämyksiä ja yhdessäoloa. Jokainen jäsen järjestää vuorollaan elämyksen, joten järjestämisvuoro osuu kohdalle noin kahdesti vuodessa, kun tapaamme joka toinen viikko. Elämysten hinnaksi on sovittu enintään 30 euroa per osallistuja, ja tapahtumat eivät ole sidottuja tiettyyn päivään. Elämys itsessään on aina yllätys muille osallistujille, mutta tarvittaessa etukäteen voidaan vinkata esimerkiksi tarvittavista varusteista.</p>
+            
+        </section>
+        
+        <section id="gallery" class="section">
+            <h2><a href="#gallery">Elämykset & Galleria</a></h2>
+            <p>Katso kuvia aiemmista elämyksistämme ja inspiroidu tulevista seikkailuista!</p>
+            
+            <div class="gallery-container">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="gallery-slider">
+                    <img src="Elämys kuva 5.jpg" alt="Elämys 1">
+                    <img src="Elämys kuva 3.jpg" alt="Elämys 2">
+                    <img src="Elämys kuva 4.jpg" alt="Elämys 3">
+                    <img src="Elämys kuva 1.jpg" alt="Elämys 4">
+                    <img src="Elämys kuva 6.jpg" alt="Elämys 5">
+                    <img src="Elämys kuva 7.jpg" alt="Elämys 6">
+                    <img src="Elämys kuva 8.jpg" alt="Elämys 7">
+                </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            
+             <!-- Aiemmat elämykset -lista -->
+             <h3>Aiemmat elämykset</h3>
+             <ul id="elamys-list">
+                 <li>Palomiehen kuntotesti</li>
+                 <li>Ammunta</li>
+                 <li>Frisbeegolf</li>
+                 <li>Amerikkalainen jalkapallo</li>
+                 <li>Skeittaus</li>
+                 <li>Ennustaja</li>
+                 <li>Hapanjuurileipä</li>
+                 <li>Dreijaus</li>
+                 <li>Jousiammunta</li>
+                 <li>Kahvitasting</li>
+                 <li>Kiviterapia</li>
+                 <li>Villiyrtit</li>
+                 <li>Joulukranssit</li>
+                 <li>Käsihoito</li>
+                 <li>Gua sha</li>
+                 <li>Triggerpoint-jooga</li>
+                 <li>Kasvopilates</li>
+                 <li>Parhaat kirjat</li>
+                 <li>Crossfit</li>
+                 <li>Ilmajooga</li>
+                 <li>Hautausmaakävely</li>
+                 <li>Valotaidepaja</li>
+                 <li>Korupaja</li>
+             </ul>
+             <button id="show-more">Näytä lisää</button>
+             <ul id="hidden-list" style="display: none;">
+                 <li>Lapsuuden lauantai</li>
+                 <li>Vesijumppa</li>
+                 <li>Radioamatöörit</li>
+                 <li>Lapsuuden pihaleikit</li>
+                 <li>3D-tulostus</li>
+                 <li>Makramee ryijy</li>
+                 <li>Unisieppari</li>
+                 <li>Saimaa Brewing Company -vierailu</li>
+                 <li>Hieronta</li>
+                 <li>Husky-tarha</li>
+                 <li>Täti parkour</li>
+                 <li>Mikamar Games</li>
+             </ul>
+             <p>Tässä oli vain osa aiemmista elämyksistämme – jokainen kokemus on ollut ainutlaatuinen!</p>
+         </section>
+        </section>
+        
+        <section id="partners" class="section">
+            <h2><a href="#partners">Ideoidaan yhdessä elämys!</a></h2>
+            <p>Onko mielessäsi idea – pieni tai suuri, villi tai arkinen? </p>
+            <p>Elämyskerho on aina valmis kokeilemaan uutta. Kerro ideasi meille, niin ehkä juuri sinun ajatuksesi muuttuu seuraavaksi unohtumattomaksi elämykseksi.</p>
+        </section>
+      
+        <section id="contact" class="section">
+            <h2><a href="#contact">Ota yhteyttä</a></h2>
+        <form action="https://formspree.io/f/xnnpqodj" method="POST">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Viesti:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Lähetä</button>
+        </form>
+    </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Elämyskerho</p>
+    </footer>
+</body>
+</html>
