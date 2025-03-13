@@ -7,10 +7,11 @@ function showSlide(index) {
     });
 }
 
-// Näytä ensimmäinen kuva heti sivun latautuessa
-document.addEventListener("DOMContentLoaded", () => {
-    if (slides.length > 0) {
-        slides[0].style.display = "block"; // Näyttää ensimmäisen kuvan
+slides.forEach((slide, index) => {
+    if (index === 0) {
+        slide.style.display = "block"; // Näytä ensimmäinen kuva
+    } else {
+        slide.style.display = "none";  // Piilota muut kuvat
     }
 });
 
