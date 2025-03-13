@@ -198,4 +198,16 @@ footer {
         list-style-type: none; /* Poistaa pisteet listasta */
         padding: 0; /* Poistaa ylimääräisen tilan listan vasemmalta puolelta */
     }
+    .gallery-slider figure {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .gallery-slider figcaption {
+        font-size: 14px;
+        color: #666; /* Vaalea teksti */
+        margin-top: 5px;
+        font-style: italic;
+    }
     
