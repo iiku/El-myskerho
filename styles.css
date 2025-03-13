@@ -220,7 +220,7 @@ footer {
     }
     
     .slide {
-        display: none; /* Oletuksena piilotetaan kaikki paitsi aktiivinen kuva */
+        display: block; /* 
         text-align: center;
     }
     
