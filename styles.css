@@ -210,4 +210,32 @@ footer {
         margin-top: 5px;
         font-style: italic;
     }
+    .gallery-container {
+        text-align: center;
+        position: relative;
+    }
+    
+    .gallery-slider {
+        position: relative;
+    }
+    
+    .slide {
+        display: none; /* Oletuksena piilotetaan kaikki paitsi aktiivinen kuva */
+        text-align: center;
+    }
+    
+    .slide img {
+        width: 100%;
+        max-width: 400px; /* Voit muuttaa tätä suuremmaksi tarvittaessa */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .caption {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+        font-style: italic;
+    }
     
