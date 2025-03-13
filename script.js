@@ -1,27 +1,29 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
-const totalSlides = slides.length;
 
-function updateSlides() {
-    slides.forEach((slide, index) => {
-        slide.style.display = (index === slideIndex) ? "block" : "none";
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? "block" : "none";
     });
 }
 
-// Näyttää ensimmäisen kuvan heti sivun latautuessa
+// Näytä ensimmäinen kuva heti sivun latautuessa
 document.addEventListener("DOMContentLoaded", () => {
-    if (totalSlides > 0) {
-        slides[0].style.display = "block"; // Tämä varmistaa, että ensimmäinen kuva näkyy!
+    if (slides.length > 0) {
+        showSlide(slideIndex);
     }
 });
 
 // Liikkuminen eteen ja taakse
 function moveSlide(step) {
     slideIndex += step;
-    if (slideIndex >= totalSlides) {
+    
+    if (slideIndex >= slides.length) {
         slideIndex = 0;
     } else if (slideIndex < 0) {
-        slideIndex = totalSlides - 1;
+        slideIndex = slides.length - 1;
     }
-    updateSlides();
+
+    showSlide(slideIndex);
 }
+
