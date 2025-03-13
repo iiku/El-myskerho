@@ -189,7 +189,7 @@ footer {
         width: 100%; /* Skaalaa kuvan gallerian levyiseksi */
         max-width: 400px; /* Estää liian suuren kuvan */
         height: auto;
-        display: none; /* Näkyy vain yksi kerrallaan */
+        display: block; /* Näkyy vain yksi kerrallaan */
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
