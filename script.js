@@ -10,7 +10,7 @@ function showSlide(index) {
 // Näytä ensimmäinen kuva heti sivun latautuessa
 document.addEventListener("DOMContentLoaded", () => {
     if (slides.length > 0) {
-        showSlide(slideIndex);
+        slides[0].style.display = "block"; // Näyttää ensimmäisen kuvan
     }
 });
 
