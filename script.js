@@ -1,3 +1,4 @@
+// Kuvagalleria (nuolilla selattava)
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const totalSlides = slides.length;
@@ -19,4 +20,21 @@ function moveSlide(step) {
 }
 
 document.addEventListener("DOMContentLoaded", updateSlides);
+
+// "Näytä lisää" -painikkeen toiminnallisuus
+const showMoreButton = document.getElementById("show-more");
+const hiddenList = document.getElementById("hidden-list");
+
+if (showMoreButton) {
+    showMoreButton.addEventListener("click", () => {
+        if (hiddenList.style.display === "none" || hiddenList.style.display === "") {
+            hiddenList.style.display = "block";
+            showMoreButton.textContent = "Näytä vähemmän";
+        } else {
+            hiddenList.style.display = "none";
+            showMoreButton.textContent = "Näytä lisää";
+        }
+    });
+}
+
 
