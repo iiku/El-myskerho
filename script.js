@@ -8,6 +8,12 @@ function updateSlides() {
         slide.style.display = (index === slideIndex) ? "block" : "none";
     });
 }
+// Näyttää ensimmäisen kuvan heti, kun sivu latautuu
+document.addEventListener("DOMContentLoaded", () => {
+    if (totalSlides > 0) {
+        slides[0].style.display = "block";
+    }
+});
 
 function moveSlide(step) {
     slideIndex += step;
