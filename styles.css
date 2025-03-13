@@ -225,6 +225,7 @@ footer {
     }
     
     .slide img {
+        display:block
         width: 100%;
         max-width: 400px; /* Voit muuttaa tätä suuremmaksi tarvittaessa */
         height: auto;
